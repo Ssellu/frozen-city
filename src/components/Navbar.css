@@ -1,0 +1,17 @@
+.Navbar {
+  position: fixed;
+  right: 0%;
+  top: -10%;
+  height: 10%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(36, 14, 100), rgb(0, 0, 0));
+  transition: 0.5s ease;
+}
+
+.Navbar.visible {
+  top: 0;
+}
+
+.Navbar.hidden {
+  top: -10%;
+}

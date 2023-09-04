@@ -1,0 +1,139 @@
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+html {
+  font-family: Montserrat, Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  background-color: rgb(36, 14, 100);
+  line-height: inherit;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-brandLightPurple {
+  --tw-text-opacity: 1;
+  color: #b146fe;
+  color: rgb(177 70 254 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: #fff;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: #9ca3af;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.pt-8 {
+  padding-top: 2rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.items-center {
+  align-items: center;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-rise {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+
+.text-rise.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grad-black-purple {
+  background-image: linear-gradient(to right, rgb(36, 14, 100), rgb(0, 0, 0));
+}
