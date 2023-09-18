@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+$primary-color: rgb(177, 70, 254);
+$text-gray: rgb(156, 163, 175);
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, .5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+
+html {
+  font-family: Montserrat, Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: normal;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-variation-settings: normal;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.01rem;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  background-color: rgb(36, 14, 100);
+  line-height: inherit;
+
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+
+  font-family: "Oxygen", sans-serif;
+  color: var(--color);
+  background: var(--bgColor);
+}
+
+h1 {
+  flex: 1;
+  display: inline-block;
+}
+
+h2 {
+  display: $primary-color;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h3 {
+  display: $primary-color;
+  font-size: 1.2em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+  /* Removes the default margin */
+  vertical-align: top;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-brandLightPurple {
+  --tw-text-opacity: 1;
+  color: $primary-color;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: #fff;
+  color: rgb(255, 255, 255);
+}
+
+.text-grey-200 {
+  --tw-text-opacity: 1;
+  color: #e5e7eb;
+  color: rgb(229, 231, 235);
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: $text-gray;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-rise {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+
+.text-rise.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.grad-black-purple {
+  background-image: linear-gradient(to right,
+      rgb(36, 14, 100),
+      rgb(0, 0, 0));
+}
+
+.callout {
+  border: 1.2px solid #e5e7eb44;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 4px;
+  font-size: 0.8rem;
+}
+
+// RESET
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+// TIMELINE ORDERED LIST
+ol.numbered {
+  $bullet-line-width: 1.2px;
+  $bullet-color: $primary-color;
+  $bullet-border-width: $bullet-line-width;
+  $bullet-background-color: white;
+  $bullet-size: 30px;
+  border-left: $bullet-line-width solid $bullet-color;
+  counter-reset: numbered-list;
+  position: relative;
+
+  li {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    padding-left: 24px;
+
+    &:last-child {
+      border-left: $bullet-line-width solid $bullet-background-color;
+      margin-left: -$bullet-line-width;
+    }
+
+    &:before {
+      $half-of-font-size: -0.2em;
+      background-color: $bullet-color;
+      border: $bullet-border-width solid $bullet-background-color;
+      border-radius: 50%;
+      color: $bullet-background-color;
+      content: counter(numbered-list, decimal);
+      counter-increment: numbered-list;
+      display: block;
+      font-weight: bold;
+      width: $bullet-size;
+      height: $bullet-size;
+      margin-top: $half-of-font-size;
+      line-height: $bullet-size;
+      position: absolute;
+      left: -$bullet-size / 2 - $bullet-line-width / 2 - $bullet-border-width;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  // Images 
+  .image-block {
+    text-align: center;
+    /* 이미지들을 가운데 정렬 */
+  }
+
+  .inline-image {
+    display: inline-block;
+    width: 45%;
+    /* 이미지를 인라인 블록으로 설정 */
+    margin: 5px;
+    /* 각 이미지 주변에 약간의 여백 추가 */
+  }
+
+}
+
+.roll-in-left {
+  -webkit-animation: roll-in-left 0.7s ease-out 1s;
+  animation: roll-in-left 0.7s ease-out 1s;
+}
+
+.v-lazy-image-loaded.visible {
+  opacity: 1;
+  transform: scale(0.8) rotate(-8deg) translateZ(0px);
+}
+
+
+.border-brandLightPurple {
+  --tw-border-opacity: 1;
+  border-color: linear-gradient(to right,
+      rgb(36, 14, 100),
+      rgb(0, 0, 0));
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.box-content {
+  box-sizing: content-box;
+}
+
+.bottom-48 {
+  bottom: 12rem;
+}
+
+.-right-14 {
+  right: -3.5rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+audio,
+canvas,
+embed,
+iframe,
+object,
+svg,
+video {
+  display: block;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-9-7 16:0:22
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation roll-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+
+  // 100% {
+  //   -webkit-transform: translateX(0) rotate(0deg);
+  //   transform: translateX(18px) rotate(0deg);
+  //   opacity: 1;
+  // }
+}
+
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+
+  // 100% {
+  //   -webkit-transform: translateX(0) rotate(0deg);
+  //   transform: translateX(18px) rotate(0deg);
+  //   opacity: 1;
+  // }
+}
+
+.container {
+  display: inline-block;
+  transition: translateX(18px)
+}

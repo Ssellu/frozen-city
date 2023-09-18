@@ -58,7 +58,7 @@ const Navbar = () => {
         duration={500}
         className="font-bold text-brandLightPurple"
       >
-        Carla Simulation
+        CARLA Simulation
       </Link>
       <Link
         to="semantic-segmentation"
