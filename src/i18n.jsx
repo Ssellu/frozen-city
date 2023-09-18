@@ -1,12 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
+// import translationEN from "./locales/en/translation.json";
+// import translationKO from "./locales/ko/translation.json";
+
 const resources = {
   en: {
     translation: {
       Introduction:
         "While Visual SLAM technologies perform well in static environments, they often struggle in dynamic settings where moving objects are present. Features extracted from these moving objects can interfere with the accurate calculation of the camera's trajectory, leading to cumulative errors that can compromise the SLAM system. In this project, we aim to mitigate this issue by using deep learning-based Semantic Segmentation to identify and remove dynamic objects. By applying these refined images to Visual SLAM, we seek to achieve a measurable improvement in performance.",
-      // ... more key-value pairs for English translation
       Overview: `<p>We have designed and implemented the following workflow:</p>
       <ol class="numbered">
       <li class="text-rise">Utilize the 'CARLA' simulator, based on Unreal Engine, to obtain images for Semantic Segmentation and V-SLAM. The CARLA simulator allows for the adjustment of various environmental factors, including weather, and provides diverse vehicle models as dynamic objects, making it suitable for this project. We have generated Stereo, RGB-D, and Monocular time-series images from the CARLA simulator for use in Semantic Segmentation and V-SLAM.</li>

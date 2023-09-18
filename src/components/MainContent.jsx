@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import i18n from "../resources/i18nSrc";
 import {
   Introduction,
   Overview,
@@ -8,7 +7,7 @@ import {
   VisualSLAM,
   Conclusion,
 } from "./CommonSection";
-
+import LanguageSelector from "./LanguageSelector";
 const MainContent = () => {
   useEffect(() => {
     const handleScroll = () => {
@@ -61,65 +60,62 @@ const MainContent = () => {
 
   return (
     <main className="text-rise text-white">
-      <div className="gap-8 items-center mx-auto max-w-screen-xl xl:gap-16 lg:grid lg:grid-cols-2 sm:py-16">
-        <div className="pt-8 px-8">
-          <button onClick={() => i18n.changeLanguage("en")}>English</button>
-          <button onClick={() => i18n.changeLanguage("ko")}>한국어</button>
-        </div>
-        <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-white pt-8 pb-12 px-8">
+      <section className="text-rise gap-8 items-center pt-8 pb-12 px-8 mx-auto max-w-screen-xl xl:gap-16 lg:grid lg:grid-cols-2 sm:py-16">
+        <h1 style={{ display: "inline-block", width: "100%" }}>
+          <LanguageSelector />
           Frozen City
+          <div style={{ display: "inline-block" }}>
+            <img
+              src="../images/teams_001.png"
+              alt="slkumquat@gmail.com"
+              format="webp"
+              delay="300"
+              style={{
+                opacity: 1,
+                transform: "translate3d(20px, 0px, 1px) scale(0.8) ",
+              }}
+              className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded"
+            />
+            <img
+              src="../images/teams_002.png"
+              alt="pcar530@gmail.com"
+              format="webp"
+              delay="300"
+              style={{
+                opacity: 1,
+                transform: "translate3d(-15px, 0px, 2px) scale(0.8)",
+              }}
+              className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded "
+            />
+            <img
+              src="../images/teams_003.png"
+              width="96"
+              height="96"
+              alt="etrongt@kakao.com"
+              format="webp"
+              delay="300"
+              style={{
+                opacity: 1,
+                transform: "translate3d(-50px, 0px, 3px) scale(0.8)",
+              }}
+              className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded"
+            />
+            <img
+              src="../images/teams_004.png"
+              width="96"
+              height="96"
+              alt="ssellu.lee@gmail.com"
+              format="webp"
+              delay="300"
+              style={{
+                opacity: 1,
+                transform: "translate3d(-85px, 0px, 4px) scale(0.8)",
+              }}
+              className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded"
+            />
+          </div>
         </h1>
-        <div className="container">
-          <img
-            src="../images/teams_001.png" 
-            alt="slkumquat@gmail.com"
-            format="webp"
-            delay="300"
-            style={{
-              opacity: 1,
-              transform: "translate3d(20px, 50px, 1px) scale(0.8) ",
-            }}
-            className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded"
-          />
-          <img
-            src="../images/teams_002.png"
-            alt="pcar530@gmail.com"
-            format="webp"
-            delay="300"
-            style={{
-              opacity: 1,
-              transform: "translate3d(-15px, 50px, 2px) scale(0.8)",
-            }}
-            className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded "
-          />
-          <img
-            src="../images/teams_003.png"
-            width="96"
-            height="96"
-            alt="etrongt@kakao.com"
-            format="webp"
-            delay="300"
-            style={{
-              opacity: 1,
-              transform: "translate3d(-50px, 50px, 3px) scale(0.8)",
-            }}
-            className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded"
-          />
-          <img
-            src="../images/teams_004.png"
-            width="96"
-            height="96"
-            alt="ssellu.lee@gmail.com"
-            format="webp"
-            delay="300"
-            style={{
-              opacity: 1,
-              transform: "translate3d(-85px, 50px, 4px) scale(0.8)",
-            }}
-            className="roll-in-left team-profile w-24 h-24 border-brandLightPurple border-4 rounded-full bottom-48 -right-14 box-content v-lazy-image v-lazy-image-loaded"
-          />
-        </div>
-      </div>
+      </section>
       <Introduction />
       <Overview />
       <Simulation />
