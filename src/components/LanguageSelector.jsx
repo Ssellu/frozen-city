@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Dropdown } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import "../resources/bootstrap.min.css"; // Bootswatch 테마
 
 function LanguageSelector() {
   const { t, i18n } = useTranslation();
