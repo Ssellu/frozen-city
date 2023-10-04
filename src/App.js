@@ -40,9 +40,11 @@ const App = () => {
     };
   }, []); // End of Intersection Observer API
   return (
-    <I18nextProvider i18n={i18n}>
-      <MainContent />
-    </I18nextProvider>
+    <BrowserRouter basename="/frozen-city">
+      <I18nextProvider i18n={i18n}>
+        <MainContent />
+      </I18nextProvider>
+    </BrowserRouter>
   );
 };
 
