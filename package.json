@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ssellu.github.io/frozen-city",
-  "name": "Frozen City",
+  "homepage": "https://ssellu.github.io",
+  "name": "ssellu",
   "version": "0.1.1",
   "private": true,
   "dependencies": {

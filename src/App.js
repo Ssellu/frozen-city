@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import MainContent from "./components/MainContent";
 import { I18nextProvider } from "react-i18next";
@@ -40,11 +40,11 @@ const App = () => {
     };
   }, []); // End of Intersection Observer API
   return (
-    <BrowserRouter basename="/">
+    <HashRouter basename="/frozen-city">
       <I18nextProvider i18n={i18n}>
         <MainContent />
       </I18nextProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
