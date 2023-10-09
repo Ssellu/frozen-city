@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import {
   Introduction,
   Overview,
@@ -10,9 +11,6 @@ import {
   TitleSection,
 } from "./CommonSection";
 const MainContent = () => {
-
-  
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll(".text-rise");
@@ -27,7 +25,7 @@ const MainContent = () => {
     };
 
     // 첫 로딩 때 한 번 실행
-    handleScroll();
+    setTimeout(handleScroll, 50); // 50ms 지연
 
     // 스크롤 이벤트에 연결
     window.addEventListener("scroll", handleScroll);
@@ -63,7 +61,10 @@ const MainContent = () => {
   }, [isVisible]);
 
   return (
-    <main className="text-rise text-white">
+    <main className="text-white">
+      <Helmet>
+        <title>Frozen City</title>
+      </Helmet>
       <TitleSection />
       <Introduction />
       <Overview />

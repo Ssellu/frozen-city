@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 $primary-color: rgb(177, 70, 254);
+$purple: #686dc3 !default;
+$neon-dark: rgb(36, 14, 100);
+$neon-violet: rgb(177, 70, 254);
 $text-gray: rgb(156, 163, 175);
 
 $body-bg-image: linear-gradient(90deg, shade-color($purple, 10%), shade-color($neon-violet, 10%), shade-color($neon-dark, 5%)) !default;
