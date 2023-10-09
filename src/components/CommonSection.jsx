@@ -135,7 +135,7 @@ export const Simulation = () => {
             title={"What is <abbr>CARLA</abbr>?"}
             content={"AboutCARLA"}
           />
-          <div className="card mb-3 mt-12">
+          <div className="card mb-3 mt-12 text-rise">
             <h4 className="card-header">Camera Intrinsic</h4>
             <div className="card-body">
               <p className="pst-group-item">
@@ -547,9 +547,7 @@ export const VisualSLAM = () => {
           <div className="card mb-3 mt-12">
             <h4 className="card-header">{t("ORB_SLAM2Result")}</h4>
             <div className="card-body">
-              <p>
-              {t("ORB_SLAM2ResultInfo")}
-              </p>
+              <p>{t("ORB_SLAM2ResultInfo")}</p>
               <img src="../../images/vslam06.png"></img>
             </div>
           </div>
@@ -558,15 +556,11 @@ export const VisualSLAM = () => {
             <h4 className="card-header">{t("Comparation")}</h4>
             <div className="card-body">
               <figure>
-                <figcaption>
-                {t("Comparation1")}
-                </figcaption>
+                <figcaption>{t("Comparation1")}</figcaption>
                 <img src="../../images/vslam07.png" />
               </figure>
               <figure>
-                <figcaption>
-                {t("Comparation2")}
-                </figcaption>
+                <figcaption>{t("Comparation2")}</figcaption>
                 <img src="../../images/conclusion02.gif" />
               </figure>
               <figure>

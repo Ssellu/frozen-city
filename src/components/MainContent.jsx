@@ -61,7 +61,7 @@ const MainContent = () => {
   }, [isVisible]);
 
   return (
-    <main className="text-white">
+    <main className="text-white grad-black-purple">
       <Helmet>
         <title>Frozen City</title>
       </Helmet>
