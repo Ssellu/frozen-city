@@ -40,7 +40,7 @@ const App = () => {
     };
   }, []); // End of Intersection Observer API
   return (
-    <BrowserRouter basename={`${process.env.PUBLIC_URL}/frozen-city`}>
+    <BrowserRouter basename="/">
       <I18nextProvider i18n={i18n}>
         <MainContent />
       </I18nextProvider>
